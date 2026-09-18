@@ -101,5 +101,6 @@ If you use this codebase or the underlying colorization models in your research,
   year={2017},
   publisher={ACM}
 }
+```
 
 This project is open-source and distributed under the MIT License. See the LICENSE file for more information.
