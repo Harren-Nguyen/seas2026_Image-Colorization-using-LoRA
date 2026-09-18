@@ -239,9 +239,9 @@ def main():
     parser.add_argument("--epochs",       type=int,   default=5)
     parser.add_argument("--batch-size",   type=int,   default=8)
     parser.add_argument("--lr",           type=float, default=1e-4)
-    parser.add_argument("--rank",         type=int,   default=4,
+    parser.add_argument("--rank",         type=int,   default=9,
                         help="LoRA rank (higher = more capacity, more params)")
-    parser.add_argument("--alpha",        type=float, default=1.0,
+    parser.add_argument("--alpha",        type=float, default=9.0,
                         help="LoRA alpha scaling factor")
     parser.add_argument("--num-workers",  type=int,   default=4)
     parser.add_argument("--no-gpu",       action="store_true")

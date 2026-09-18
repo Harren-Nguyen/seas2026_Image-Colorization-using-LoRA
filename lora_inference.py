@@ -31,8 +31,8 @@ def load_model_with_lora(
     weights_path: Path,
     lora_path: Path,
     device: torch.device,
-    rank: int = 4,
-    alpha: float = 1.0,
+    rank: int = 2,
+    alpha: float = 2.0,
 ) -> ECCVColorizer:
     # 1. Load frozen base model
     base_model = ECCVColorizer()
@@ -76,9 +76,9 @@ def main():
                         help="Path to base model .pth weights")
     parser.add_argument("--lora",       default=str(LORA_SAVE_PATH),
                         help="Path to LoRA weights .pth")
-    parser.add_argument("--rank",       type=int,   default=4,
+    parser.add_argument("--rank",       type=int,   default=6,
                         help="LoRA rank (must match what was used in training)")
-    parser.add_argument("--alpha",      type=float, default=1.0,
+    parser.add_argument("--alpha",      type=float, default=6.0,
                         help="LoRA alpha (must match training)")
     parser.add_argument("--no-gpu",     action="store_true")
     args = parser.parse_args()

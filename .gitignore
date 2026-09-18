@@ -1,2 +1,7 @@
-all_images/
 venv/
+dataset/
+input/
+output/
+output_lora/
+checkpoints/
+_pycache_/
