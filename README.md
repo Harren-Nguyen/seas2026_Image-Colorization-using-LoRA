@@ -14,7 +14,7 @@ The backbone replicates Zhang et al.'s architecture:
 
 - Feature Extractor: 8 convolutional blocks incorporating dilated convolutions (dilations 2) to increase the receptive field without downsampling.   
 
-- Output: Soft-decoded $a^*b^*$ color channel prediction $(B, 2, H/4, W/4)$ scaled to $[-110, 110]$.   
+- Output: Soft-decoded a*b* color channel prediction $(B, 2, H/4, W/4)$ scaled to $[-110, 110]$.   
 
 __2) Low-Rank Adaptation (nn.Conv2d)__
 
