@@ -40,7 +40,7 @@ PyTorch with CUDA support
 __Environment Setup__
 ```Bash
 # Clone the repository:
-git clone https://github.com/Harren-Nguyen/Image-Colorization-using-LoRA.git
+git clone https://github.com/Harren-Nguyen/seas2026_Image-Colorization-using-LoRA.git
 cd Image-Colorization-using-LoRA
 
 # Create virtual environment:
